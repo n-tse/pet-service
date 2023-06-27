@@ -1,0 +1,94 @@
+.pricing-content .headline {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.pricing-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--secondary-color); */
+  padding: 20px 20px;
+  margin: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px #ccc;
+}
+
+.pricing-card:hover {
+  background-color: #f6f6f6;
+}
+
+.pricing-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 10px; */
+}
+
+.pricing-card-header .plan-name {
+  padding: 4px;
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+.pricing-card-header .sub-header {
+  color: #606060;
+  font-size: 0.9rem;
+  padding: 2px 0 8px;
+}
+
+.pricing-card-header .plan-cost {
+  padding: 4px;
+  color: #606060;
+  font-size: 2rem;
+}
+
+.services-provided-list ul {
+  margin: 6px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pricing-card .services-provided-list ul li {
+  column-gap: 0.25rem;
+  color: #606060;
+  line-height: 2rem;
+}
+
+.pricing-card .services-provided-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-card-btn {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  background-color: var(--secondary-color);
+  margin: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px #ccc;
+}
+
+.service-included-icon {
+  color: green;
+}
+
+.service-not-included-icon {
+  color: red;
+  font-size: 0.9rem;
+}
