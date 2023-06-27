@@ -14,7 +14,8 @@ ul.menu {
 }
 
 .nav-item {
-  padding: 5px;
+  /* padding: 5px; */
+  margin: 5px;
   cursor: pointer;
   color: var(--heading-color)
 }
@@ -46,7 +47,7 @@ ul.menu {
   color: white;
   border: none;
   border-radius: 6px;
-  box-shadow: 0px 0px 10px #bbb;
+  box-shadow: 0px 0px 8px #bbb;
   cursor: pointer;
 }
 

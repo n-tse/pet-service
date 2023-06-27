@@ -1,0 +1,71 @@
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+.hero-content {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 2vw;
+  /* background-color: aquamarine; */
+}
+
+.hero-content .headline {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.hero-content .text {
+  width: 42vw;
+  margin-bottom: 40px;
+}
+
+.hero-img img {
+  height: 360px;
+  width: 260px;
+  object-fit: cover;
+  border-radius: 40%;
+  box-shadow: 0 0 4px #aaa;
+}
+
+.hero-btns .get-started {
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 0px 8px #bbb;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.hero-btns .get-started:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+.hero-btns .view-testimonials {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+  margin-left: 1.5vw;
+}
+
+.hero-btns .view-testimonials:hover {
+  background-color: #ccc;
+}
+
+.hero-img .hero-img-wrapper {
+  position: relative;
+}
+
+.hero-img .heart-icon {
+  position: absolute;
+  color: red;
+  font-size: 4.5rem;
+  bottom: 8px;
+  right: -4px;
+}

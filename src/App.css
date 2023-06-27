@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+
 :root {
   --primary-color: #7ed957;
-  --primary-color-dark: #68d539;
+  --primary-color-dark: #6bcf40;
   --secondary-color: #38b6ff;
+  --secondary-color-dark: #33a6e8;
   --heading-color: #092c2b;
-  --default-font-family: "Arial Narrow", sans-serif;
+  --default-font-family: "Asap", sans-serif;
+  /* --default-font-family: "Arial Narrow", sans-serif; */
 }
 
 a {
@@ -13,4 +19,11 @@ a {
 
 a:hover {
   color: unset;
+}
+
+.container {
+  padding: 5vh 10vw;
+  margin: auto;
+  font-family: "Asap", sans-serif;
+  /* background-color: aquamarine; */
 }
