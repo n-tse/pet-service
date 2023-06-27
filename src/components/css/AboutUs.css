@@ -26,3 +26,18 @@
   display: flex;
   justify-content: center;
 }
+
+.about-us-header {
+  position: relative;
+}
+
+.about-us-header .about-us-bg-graphic {
+  position: absolute;
+  top: -30px;
+  left: -400px;
+  height: 600px;
+  width: 600px;
+  z-index: -1;
+  opacity: 0.5;
+  transform: rotate(20deg);
+}

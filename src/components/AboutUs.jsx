@@ -9,6 +9,7 @@ import photo4 from "../assets/ricky-kharawala-adK3Vu70DEQ-unsplash.jpg";
 import photo5 from "../assets/matt-nelson-aI3EBLvcyu4-unsplash.jpg";
 import photo6 from "../assets/rudy-jr-KqxEx_Mf-UI-unsplash.jpg";
 import photo7 from "../assets/alexander-grey-W5D__7paUa0-unsplash.jpg";
+import PawOutlineLogo from "../assets/PawOutlineLogo-removebg-preview.png";
 
 const AboutUs = () => {
   const images = useMemo(
@@ -19,7 +20,10 @@ const AboutUs = () => {
     <div className="container">
       <div className="about-us-wrapper">
         <div className="about-us-content">
-          <h2 className="headline">About Us</h2>
+          <div className="about-us-header">
+            <h2 className="headline">About Us </h2>
+            <img src={PawOutlineLogo} className="about-us-bg-graphic" />
+          </div>
           <p className="text">
             At <span className="highlight-text">Pawsitive Pet Care</span>, we
             believe that every pet deserves to be showered with love, care, and
@@ -44,7 +48,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="carousel-container">
-        <Carousel useKeyboardArrows={true} width="40vw" infiniteLoop={true}>
+        <Carousel useKeyboardArrows={true} width="50vw" infiniteLoop={true} showThumbs={false} autoPlay={true} interval={5000} transitionTime={1000} emulateTouch={true}>
           {images.map((image, idx) => (
             <div key={idx}>
               <img src={image} />
