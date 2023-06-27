@@ -22,7 +22,7 @@ const AboutUs = () => {
         <div className="about-us-content">
           <div className="about-us-header">
             <h2 className="headline">About Us </h2>
-            <img src={PawOutlineLogo} className="about-us-bg-graphic" />
+            <img src={PawOutlineLogo} className="about-us-bg-graphic" alt="Paw print outline" />
           </div>
           <p className="text">
             At <span className="highlight-text">Pawsitive Pet Care</span>, we

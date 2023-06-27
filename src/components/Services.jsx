@@ -6,6 +6,7 @@ import { GiComb } from 'react-icons/gi';
 import { LuHotel } from 'react-icons/lu';
 import { BiSolidBone } from 'react-icons/bi';
 import { MdHealthAndSafety, MdSports } from 'react-icons/md';
+import SunGraphic from '../assets/SunGraphic-removebg-preview.png'
 
 const Services = () => {
   return (
@@ -13,6 +14,7 @@ const Services = () => {
       <div className="services-wrapper">
         <div className="services-content">
           <h2 className="headline">Services</h2>
+          <img src={SunGraphic} className="services-bg-graphic" alt="Yellow sun graphic" />
           <div className="services-graphic">
             <div className="service">
               <h4>Dog Walking</h4>
@@ -27,12 +29,12 @@ const Services = () => {
               <GiComb className="service-icon"/>
             </div>
             <div className="service">
-              <h4>Boarding & Daycare</h4>
-              <LuHotel className="service-icon"/>
-            </div>
-            <div className="service">
               <h4>Training</h4>
               <MdSports className="service-icon"/>
+            </div>
+            <div className="service">
+              <h4>Boarding & Daycare</h4>
+              <LuHotel className="service-icon"/>
             </div>
             <div className="service">
               <h4>Tranportation</h4>

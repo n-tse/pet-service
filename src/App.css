@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 
 :root {
   --primary-color: #7ed957;
@@ -10,6 +9,7 @@
   --bg-gradient: linear-gradient(90deg, #7ed957 30%, #a6ff80);
   --heading-color: #092c2b;
   --default-font-family: "Asap", sans-serif;
+  overflow-x: hidden;
   /* --default-font-family: "Arial Narrow", sans-serif; */
 }
 
@@ -20,6 +20,10 @@ a {
 
 a:hover {
   color: unset;
+}
+
+p {
+  font-size: 1.2rem;
 }
 
 .container {
