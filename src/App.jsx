@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Pricing from './components/Pricing'
 import Services from './components/Services'
 import Testimonials from './components/Testimonials'
+import Faq from './components/Faq'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Pricing />
       <Testimonials />
+      <Faq />
     </>
   )
 }
