@@ -8,14 +8,14 @@ const Pricing = () => {
       <div className="pricing-content">
         <div className="pricing-header">
           <h2 className="headline">Pricing Plans</h2>
+          <p className="text">
+            At <span className="highlight-text">Pawsitive Pet Care</span>, we
+            believe that every pet deserves to be showered with love, care, and
+            attention. Our dedicated team of professionals is committed to
+            providing exceptional pet services that cater to your furry friend's
+            unique needs.
+          </p>
         </div>
-        <p className="text">
-          At <span className="highlight-text">Pawsitive Pet Care</span>, we
-          believe that every pet deserves to be showered with love, care, and
-          attention. Our dedicated team of professionals is committed to
-          providing exceptional pet services that cater to your furry friend's
-          unique needs.
-        </p>
         <div className="pricing-cards-container">
           <div className="pricing-card">
             <div className="pricing-card-header">
@@ -53,7 +53,7 @@ const Pricing = () => {
                 </li>
                 <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
-                  Heath Checkup
+                  Health Checkup
                 </li>
               </ul>
             </div>
@@ -79,11 +79,11 @@ const Pricing = () => {
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />
-                  Member exclusive supply discounts
+                  24/7 Customer Support
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />
-                  24/7 Customer Support
+                  Member exclusive supply discounts
                 </li>
                 <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
@@ -107,7 +107,7 @@ const Pricing = () => {
               <button className="pricing-card-btn">Subscribe Now</button>
             </div>
           </div>
-          <div className="pricing-card">
+          <div className="pricing-card popular-plan">
             <div className="pricing-card-header">
               <h2 className="plan-name">
                 Standard <span style={{ color: "#606060" }}>Care</span>
@@ -116,6 +116,7 @@ const Pricing = () => {
               <h2 className="plan-cost">
                 $80<span style={{ fontSize: "0.8rem" }}>/month</span>
               </h2>
+              <div className="popular-banner">Most Popular</div>
             </div>
             <div className="services-provided-list">
               <ul style={{ listStyle: "none" }}>
@@ -125,11 +126,11 @@ const Pricing = () => {
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />
-                  Member exclusive supply discounts
+                  24/7 Customer Support
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />
-                  24/7 Customer Support
+                  Member exclusive supply discounts
                 </li>
                 <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
@@ -171,11 +172,11 @@ const Pricing = () => {
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />
-                  Member exclusive supply discounts
+                  24/7 Customer Support
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />
-                  24/7 Customer Support
+                  Member exclusive supply discounts
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />

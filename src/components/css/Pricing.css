@@ -5,22 +5,50 @@
   margin-bottom: 30px;
 }
 
+.pricing-header .text  {
+  width: 60vw;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .pricing-cards-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 20px 0;
 }
 
 .pricing-card {
+  flex: 0 0 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: var(--secondary-color); */
-  padding: 20px 20px;
+  padding: 20px 30px;
   margin: 10px;
   border-radius: 6px;
   box-shadow: 0 0 6px #ccc;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .pricing-cards-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .pricing-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .pricing-cards-container {
+    justify-content: center;
+  }
 }
 
 .pricing-card:hover {
@@ -31,7 +59,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-bottom: 10px; */
 }
 
 .pricing-card-header .plan-name {
@@ -43,7 +70,7 @@
 .pricing-card-header .sub-header {
   color: #606060;
   font-size: 0.9rem;
-  padding: 2px 0 8px;
+  padding: 0 0 6px;
 }
 
 .pricing-card-header .plan-cost {
@@ -53,7 +80,7 @@
 }
 
 .services-provided-list ul {
-  margin: 6px;
+  margin: 0 16px;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -64,6 +91,7 @@
   column-gap: 0.25rem;
   color: #606060;
   line-height: 2rem;
+  font-size: 0.8rem;
 }
 
 .pricing-card .services-provided-list-item {
@@ -78,8 +106,8 @@
   border: none;
   color: white;
   background-color: var(--secondary-color);
-  margin: 6px;
-  font-size: 1.1rem;
+  margin: 10px;
+  font-size: 1rem;
   cursor: pointer;
   box-shadow: 0 4px 8px #ccc;
 }
@@ -90,5 +118,19 @@
 
 .service-not-included-icon {
   color: red;
-  font-size: 0.9rem;
+}
+
+.popular-plan {
+  position: relative;
+}
+
+.popular-banner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 4px 8px;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.8rem;
+  border-bottom-left-radius: 6px;
 }
