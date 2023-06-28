@@ -6,6 +6,7 @@ import Pricing from './components/Pricing'
 import Services from './components/Services'
 import Testimonials from './components/Testimonials'
 import Faq from './components/Faq'
+import SiteMap from './components/SiteMap'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Pricing />
       <Testimonials />
       <Faq />
+      <SiteMap />
     </>
   )
 }

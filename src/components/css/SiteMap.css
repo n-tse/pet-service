@@ -1,0 +1,66 @@
+.footer {
+  background-color: #eee;
+  padding: 4rem 0;
+  font-family: "Asap", sans-serif;
+  /* color: var(--heading-color); */
+}
+
+.footer .logo {
+  height: 80px;
+  width: 192px;
+  /* border: 1px solid black; */
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+  margin: auto;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column-links li{
+  margin: 4px 0;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.footer-column-links li:hover {
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.social-icons-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.facebook-icon {
+  margin: 0 -4px;
+}
+
+.footer-contact-info-row {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.footer-contact-info-icon {
+  margin-right: 6px;
+  flex-shrink: 0;
+}
