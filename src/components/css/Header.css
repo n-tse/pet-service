@@ -1,5 +1,9 @@
 .header {
-  box-shadow: 0 4px 4px #eee;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0px 4px #ddd;
+  z-index: 99;
+  background-color: white;
 }
 
 .logo-area {
