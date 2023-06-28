@@ -1,22 +1,23 @@
-.accordian-item {
+.accoridion-item {
   box-shadow: 0 0 6px #ccc;
   margin: 2rem;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.accordian-header {
+.accoridion-header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;;
+  align-items: center;
+  padding: 1rem 1.5rem;
   background-color: #ccc;
   cursor: pointer;
 }
 
-.accordian-header:hover{
+.accoridion-header:hover{
   background-color: #bbb;
 }
 
-.accordian-content {
-  padding: 1rem;
+.accoridion-content {
+  padding: 1rem 1.5rem;
 }
