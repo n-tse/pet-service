@@ -6,7 +6,7 @@
   --primary-color-dark: #6bcf40;
   --secondary-color: #38b6ff;
   --secondary-color-dark: #33a6e8;
-  --bg-gradient: linear-gradient(90deg, #7ed957 30%, #a6ff80);
+  --bg-gradient: linear-gradient(90deg, #7ed957 20%, #aeff8b);
   --heading-color: #092c2b;
   --default-font-family: "Asap", sans-serif;
   overflow-x: hidden;

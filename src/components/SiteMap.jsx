@@ -16,7 +16,7 @@ const SiteMap = () => {
   return (
     <footer className="footer">
       <div className="footer-wrapper">
-        <div className="footer-column">
+        <div className="footer-column footer-logo-column">
           <div className="logo-container">
             <img src={logo} alt="Pawsitive Pet Care company logo" className="logo" />
           </div>

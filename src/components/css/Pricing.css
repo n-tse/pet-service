@@ -112,6 +112,10 @@
   box-shadow: 0 4px 8px #ccc;
 }
 
+.pricing-card-btn:hover {
+  background-color: var(--secondary-color-dark);
+}
+
 .service-included-icon {
   color: green;
   flex-shrink: 0;

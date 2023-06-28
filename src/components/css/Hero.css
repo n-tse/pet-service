@@ -12,10 +12,11 @@
   /* background-color: aquamarine; */
 }
 
-/* .hero-content .headline {
-  font-size: 3rem;
-  margin-bottom: 30px;
-} */
+.hero-content .headline {
+  /* font-size: 3rem;
+  margin-bottom: 30px; */
+  justify-content: flex-start;
+}
 
 .hero-content .text {
   width: 42vw;
