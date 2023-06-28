@@ -9,11 +9,17 @@ const Pricing = () => {
         <div className="pricing-header">
           <h2 className="headline">Pricing Plans</h2>
           <p className="text">
-            At <span className="highlight-text">Pawsitive Pet Care</span>, we
-            believe that every pet deserves to be showered with love, care, and
-            attention. Our dedicated team of professionals is committed to
-            providing exceptional pet services that cater to your furry friend's
-            unique needs.
+            We believe that pet care should be{" "}
+            <span className="highlight-text">convenient</span> and{" "}
+            <span className="highlight-text">stress-free</span> for pet owners.
+            With our flexible scheduling options and experienced, attentive
+            staff, we aim to make your life easier while giving your pet the
+            attention and care they deserve.
+          </p>
+          <br></br>
+          <p className="text">
+            All plans include:{" "}
+            <b>Dog Walking, Pet Sitting, Grooming, and Training</b>
           </p>
         </div>
         <div className="pricing-cards-container">
@@ -41,19 +47,19 @@ const Pricing = () => {
                 </li>
                 <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
-                  Boarding & Daycare
-                </li>
-                <li className="services-provided-list-item">
-                  <BsXCircle className="service-not-included-icon" />
-                  Transportation
-                </li>
-                <li className="services-provided-list-item">
-                  <BsXCircle className="service-not-included-icon" />
                   Supply Delivery
                 </li>
                 <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
                   Health Checkup
+                </li>
+                <li className="services-provided-list-item">
+                  <BsXCircle className="service-not-included-icon" />
+                  Boarding & Daycare
+                </li>
+                <li className="services-provided-list-item">
+                  <BsXCircle className="service-not-included-icon" />
+                  Transportation
                 </li>
               </ul>
             </div>
@@ -87,19 +93,19 @@ const Pricing = () => {
                 </li>
                 <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
+                  Supply Delivery
+                </li>
+                <li className="services-provided-list-item">
+                  <BsXCircle className="service-not-included-icon" />
+                  Health Checkup
+                </li>
+                <li className="services-provided-list-item">
+                  <BsXCircle className="service-not-included-icon" />
                   Boarding & Daycare
                 </li>
                 <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
                   Transportation
-                </li>
-                <li className="services-provided-list-item">
-                  <BsXCircle className="service-not-included-icon" />
-                  Supply Delivery
-                </li>
-                <li className="services-provided-list-item">
-                  <BsXCircle className="service-not-included-icon" />
-                  Heath Checkup
                 </li>
               </ul>
             </div>
@@ -133,20 +139,20 @@ const Pricing = () => {
                   Member exclusive supply discounts
                 </li>
                 <li className="services-provided-list-item">
+                  <BsCheck2Circle className="service-included-icon" />
+                  Supply Delivery
+                </li>
+                <li className="services-provided-list-item">
+                  <BsCheck2Circle className="service-included-icon" />
+                  Health Checkup
+                </li>
+                <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
                   Boarding & Daycare
                 </li>
                 <li className="services-provided-list-item">
                   <BsXCircle className="service-not-included-icon" />
                   Transportation
-                </li>
-                <li className="services-provided-list-item">
-                  <BsXCircle className="service-not-included-icon" />
-                  Supply Delivery
-                </li>
-                <li className="services-provided-list-item">
-                  <BsXCircle className="service-not-included-icon" />
-                  Heath Checkup
                 </li>
               </ul>
             </div>
@@ -180,19 +186,19 @@ const Pricing = () => {
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />
+                  Supply Delivery
+                </li>
+                <li className="services-provided-list-item">
+                  <BsCheck2Circle className="service-included-icon" />
+                  Health Checkup
+                </li>
+                <li className="services-provided-list-item">
+                  <BsCheck2Circle className="service-included-icon" />
                   Boarding & Daycare
                 </li>
                 <li className="services-provided-list-item">
                   <BsCheck2Circle className="service-included-icon" />
                   Transportation
-                </li>
-                <li className="services-provided-list-item">
-                  <BsCheck2Circle className="service-included-icon" />
-                  Supply Delivery
-                </li>
-                <li className="services-provided-list-item">
-                  <BsCheck2Circle className="service-included-icon" />
-                  Heath Checkup
                 </li>
               </ul>
             </div>
@@ -201,6 +207,12 @@ const Pricing = () => {
             </div>
           </div>
         </div>
+        {/* <p id="footer">
+          Questions about pricing? Email us at{"\u00A0"}
+          <a href="" style={{ textDecoration: "underline", color: "blue" }}>
+            support@pawsitivepets.com
+          </a>
+        </p> */}
       </div>
     </div>
   );

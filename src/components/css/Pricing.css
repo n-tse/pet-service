@@ -80,7 +80,7 @@
 }
 
 .services-provided-list ul {
-  margin: 0 16px;
+  margin: 10px 16px 0;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -88,10 +88,10 @@
 }
 
 .pricing-card .services-provided-list ul li {
-  column-gap: 0.25rem;
+  column-gap: 0.4rem;
   color: #606060;
-  line-height: 2rem;
   font-size: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 .pricing-card .services-provided-list-item {
@@ -114,10 +114,12 @@
 
 .service-included-icon {
   color: green;
+  flex-shrink: 0;
 }
 
 .service-not-included-icon {
   color: red;
+  flex-shrink: 0;
 }
 
 .popular-plan {
@@ -133,4 +135,10 @@
   color: white;
   font-size: 0.8rem;
   border-bottom-left-radius: 6px;
+}
+
+.pricing-content #footer {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
 }
