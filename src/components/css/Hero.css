@@ -5,11 +5,10 @@
 }
 
 .hero-content {
-  width: 50vw;
+  width: 46vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: 0 2vw; */
   /* background-color: aquamarine; */
 }
 
@@ -24,8 +23,8 @@
 }
 
 .hero-img img {
-  height: 360px;
-  width: 260px;
+  height: 420px;
+  width: 300px;
   object-fit: cover;
   border-radius: 40%;
   box-shadow: 0 0 4px #aaa;
@@ -39,6 +38,8 @@
   box-shadow: 0px 0px 8px #bbb;
   cursor: pointer;
   background-color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin: 0 1.5vw 1.5vw 0;
 }
 
 .hero-btns .get-started:hover {
@@ -51,7 +52,7 @@
   border-radius: 6px;
   cursor: pointer;
   background-color: #ddd;
-  margin-left: 1.5vw;
+  font-size: 1.2rem;
 }
 
 .hero-btns .view-testimonials:hover {
@@ -65,7 +66,7 @@
 .hero-img .heart-icon {
   position: absolute;
   color: red;
-  font-size: 4.5rem;
+  font-size: 5rem;
   bottom: 8px;
   right: -4px;
 }
