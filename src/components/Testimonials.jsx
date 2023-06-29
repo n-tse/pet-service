@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./css/Testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { EffectCards, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "./css/Testimonials.css";
-import { EffectCards } from "swiper";
 import TestimonialImg1 from "../assets/tamas-pap-Qdt8f7Tcle0-unsplash.jpg";
 import TestimonialImg2 from "../assets/wade-austin-ellis-FtuJIuBbUhI-unsplash.jpg";
 import TestimonialImg3 from "../assets/mel-elias-2_KjpNXFl5M-unsplash.jpg";
 
+SwiperCore.use([EffectCards, Navigation]);
+
 const Testimonials = () => {
+  const swiperRef = useRef(null);
+
+  const handleSlideClick = (event) => {
+    const slideWidth = event.currentTarget.offsetWidth;
+    const clickPositionX = event.pageX - event.currentTarget.getBoundingClientRect().left;
+    const clickThreshold = slideWidth / 2;
+
+    if (clickPositionX < clickThreshold && swiperRef.current && swiperRef.current.slidePrev) {
+      swiperRef.current.slidePrev();
+    } else if (clickPositionX >= clickThreshold && swiperRef.current && swiperRef.current.slideNext) {
+      swiperRef.current.slideNext();
+    }
+  };
+
   return (
     <section id="testimonials">
       <div className="container">
@@ -18,14 +34,19 @@ const Testimonials = () => {
         </div>
         <div className="sliders-container">
           <Swiper
-            effect={"cards"}
+            effect="cards"
             grabCursor={true}
             loop={true}
-            modules={[EffectCards]}
+            modules={[EffectCards, Navigation]}
             className="mySwiper"
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             <SwiperSlide>
-              <div className="slide-item">
+              <div className="slide-item" onClick={handleSlideClick}>
                 <div className="slide-img">
                   <img src={TestimonialImg2} alt="" />
                 </div>
@@ -39,7 +60,7 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="slide-item">
+              <div className="slide-item" onClick={handleSlideClick}>
                 <div className="slide-img">
                   <img src={TestimonialImg1} alt="" />
                 </div>
@@ -53,7 +74,7 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="slide-item">
+              <div className="slide-item" onClick={handleSlideClick}>
                 <div className="slide-img">
                   <img src={TestimonialImg3} alt="" />
                 </div>
@@ -68,6 +89,8 @@ const Testimonials = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+          <div className="swiper-button-next"></div>
+          <div className="swiper-button-prev"></div>
         </div>
       </div>
     </section>

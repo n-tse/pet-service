@@ -14,7 +14,7 @@
 .services-graphic {
   background: var(--bg-gradient);
   width: 70vw;
-  max-width: 1200px;
+  max-width: 1050px;
   height: auto;
   border-radius: 20px;
   display: flex;
@@ -56,7 +56,7 @@
 .services-bg-graphic {
   position: absolute;
   z-index: -1;
-  top: -220px;
+  top: -200px;
   right: -480px;
   height: 700px;
   width: 700px;
