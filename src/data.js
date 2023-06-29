@@ -1,3 +1,34 @@
+export const navItems = [
+  {
+    path: "#",
+    name: "Home",
+  },
+  {
+    path: "#about-us",
+    name: "About Us",
+  },
+  {
+    path: "#services",
+    name: "Services",
+  },
+  {
+    path: "#pricing",
+    name: "Pricing",
+  },
+  {
+    path: "#testimonials",
+    name: "Testimonials",
+  },
+  {
+    path: "#faq",
+    name: "FAQ",
+  },
+  {
+    path: "#footer",
+    name: "Contact Us",
+  },
+];
+
 export const accordionData = [
   {
     header: "How do I schedule an appointment for my pet?",
