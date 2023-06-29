@@ -5,9 +5,12 @@
   margin-bottom: 30px;
 } */
 
-.sliders {
+.sliders-container {
   width: 60vw;
   min-width: 400px;
+  padding: 2vh 10vw;
+  margin: auto;
+  font-family: "Asap", sans-serif;
 }
 
 .swiper-slide {

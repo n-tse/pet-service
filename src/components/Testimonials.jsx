@@ -16,7 +16,7 @@ const Testimonials = () => {
         <div className="testimonials-header">
           <h2 className="headline">Testimonials</h2>
         </div>
-        <div className="container sliders">
+        <div className="sliders-container">
           <Swiper
             effect={"cards"}
             grabCursor={true}

@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="navbar-wrapper">
-        <div className="logo-area">
+        <div className="logo-area" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
           <img
             src={logo}
             alt="Pawsitive Pet Care Logo"
