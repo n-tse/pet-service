@@ -21,17 +21,19 @@ const Services = () => {
               alt="Yellow sun graphic"
               data-aos="fade-left"
               data-aos-duration="3000"
-              data-aos-delay="1000"
+              data-aos-delay="1500"
               data-aos-once="true"
-              data-aos-anchor="#services-trigger-right"
+              data-aos-anchor="#services-trigger"
             />
             <div className="services-graphic">
               <div
                 className="service"
                 data-aos="zoom-out"
                 data-aos-duration="1500"
-                data-aos-delay="500"
+                data-aos-delay="750"
+                // data-aos-anchor="#services-trigger"
                 data-aos-once="true"
+                id="services-trigger"
               >
                 <h4>Dog Walking</h4>
                 <IoFootstepsSharp className="service-icon" />
@@ -40,7 +42,8 @@ const Services = () => {
                 className="service"
                 data-aos="zoom-out"
                 data-aos-duration="1500"
-                data-aos-delay="500"
+                data-aos-delay="750"
+                data-aos-anchor="#services-trigger"
                 data-aos-once="true"
               >
                 <h4>Pet Sitting</h4>
@@ -50,7 +53,8 @@ const Services = () => {
                 className="service"
                 data-aos="zoom-out"
                 data-aos-duration="1500"
-                data-aos-delay="500"
+                data-aos-delay="750"
+                data-aos-anchor="#services-trigger"
                 data-aos-once="true"
               >
                 <h4>Grooming</h4>
@@ -60,7 +64,8 @@ const Services = () => {
                 className="service"
                 data-aos="zoom-out"
                 data-aos-duration="1500"
-                data-aos-delay="500"
+                data-aos-delay="750"
+                data-aos-anchor="#services-trigger"
                 data-aos-once="true"
               >
                 <h4>Training</h4>
@@ -70,7 +75,8 @@ const Services = () => {
                 className="service"
                 data-aos="zoom-out"
                 data-aos-duration="1500"
-                data-aos-delay="500"
+                data-aos-delay="750"
+                data-aos-anchor="#services-trigger"
                 data-aos-once="true"
               >
                 <h4>Boarding & Daycare</h4>
@@ -80,7 +86,8 @@ const Services = () => {
                 className="service"
                 data-aos="zoom-out"
                 data-aos-duration="1500"
-                data-aos-delay="500"
+                data-aos-delay="750"
+                data-aos-anchor="#services-trigger"
                 data-aos-once="true"
               >
                 <h4>Tranportation</h4>
@@ -90,7 +97,8 @@ const Services = () => {
                 className="service"
                 data-aos="zoom-out"
                 data-aos-duration="1500"
-                data-aos-delay="500"
+                data-aos-delay="750"
+                data-aos-anchor="#services-trigger"
                 data-aos-once="true"
               >
                 <h4>Supply Delivery</h4>
@@ -100,7 +108,8 @@ const Services = () => {
                 className="service"
                 data-aos="zoom-out"
                 data-aos-duration="1500"
-                data-aos-delay="500"
+                data-aos-delay="750"
+                data-aos-anchor="#services-trigger"
                 data-aos-once="true"
               >
                 <h4>Health Checkup</h4>
@@ -109,7 +118,7 @@ const Services = () => {
             </div>
           </div>
         </div>
-        <div id="services-trigger-right" />
+        {/* <div id="services-trigger" /> */}
       </div>
     </section>
   );
