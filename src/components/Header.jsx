@@ -4,9 +4,15 @@ import { navItems } from "../data";
 import logo from "../assets/PawsitivePetCareLogoOnly-removebg-preview.png";
 import logoName from "../assets/PawsitivePetCareNameCropped-removebg-preview.png";
 import Hamburger from "./Hamburger";
+import { scrollToSection } from "../utils/navigation";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const handleClick = (sectionName) => {
+    scrollToSection(sectionName);
+    setShowMenu(!showMenu);
+  }
 
   return (
     <header className="header">
@@ -34,7 +40,7 @@ const Header = () => {
             ))}
           </ul>
           <div className="action-button-container">
-            <button className="action-button">Join Now</button>
+            <button className="action-button" onClick={() => handleClick("pricing")}>Join Now</button>
           </div>
         </div>
         <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
@@ -53,7 +59,7 @@ const Header = () => {
             ))}
           </ul>
           <div className="action-button-container">
-            <button className="action-button">Join Now</button>
+            <button className="action-button" onClick={() => handleClick("pricing")}>Join Now</button>
           </div>
         </div>
       )}

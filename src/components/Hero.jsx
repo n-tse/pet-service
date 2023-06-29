@@ -2,15 +2,9 @@ import React from "react";
 import "./css/Hero.css";
 import MollyPhoto from "../assets/MollyPhoto.jpg";
 import { BsFillHeartFill } from "react-icons/bs";
+import { scrollToSection } from "../utils/navigation";
 
 const Hero = () => {
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section>
       <div className="container">
@@ -21,6 +15,7 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-duration="1500"
                 data-aos-delay="500"
+                data-aos-once="true"
               >
                 Caring for Pets,&nbsp;
               </span>
@@ -28,6 +23,7 @@ const Hero = () => {
                 data-aos="fade-up"
                 data-aos-duration="1500"
                 data-aos-delay="1600"
+                data-aos-once="true"
                 className="highlight-text"
               >
                 Creating Smiles
@@ -56,11 +52,13 @@ const Hero = () => {
           </div>
           <div className="hero-img">
             <div className="hero-img-wrapper">
-              <img src={MollyPhoto} alt="Photo of my dog Molly" />
+              <img src={MollyPhoto} alt="Photo of my dog Molly" id="heart-icon-trigger"/>
               <div
                 data-aos="zoom-in-down"
                 data-aos-duration="2000"
                 data-aos-delay="3000"
+                data-aos-once="true"
+                data-aos-anchor="heart-icon-trigger"
               >
                 <BsFillHeartFill className="heart-icon zoom" />
               </div>
