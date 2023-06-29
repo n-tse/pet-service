@@ -17,46 +17,62 @@ const AboutUs = () => {
     []
   );
   return (
-    <div className="container">
-      <div className="about-us-wrapper">
-        <div className="about-us-content">
-          <div className="about-us-header">
-            <h2 className="headline">About Us </h2>
-            <img src={PawOutlineLogo} className="about-us-bg-graphic" alt="Paw print outline" />
+    <section id="about-us">
+      <div className="container">
+        <div className="about-us-wrapper">
+          <div className="about-us-content">
+            <div className="about-us-header">
+              <h2 className="headline">About Us </h2>
+              <img
+                src={PawOutlineLogo}
+                className="about-us-bg-graphic"
+                alt="Paw print outline"
+              />
+            </div>
+            <p className="text">
+              At <span className="highlight-text">Pawsitive Pet Care</span>, we
+              believe that every pet deserves to be showered with love, care,
+              and attention. Our dedicated team of professionals is committed to
+              providing exceptional pet services that cater to your furry
+              friend's unique needs.
+            </p>
+            <br></br>
+            <p className="text">
+              What sets us apart is our comprehensive range of pet services
+              designed to cater to your pet's unique needs. Whether your furry
+              companion requires regular grooming sessions, daily walks,
+              stimulating playtime, or specialized care, we have you covered.
+              Our services are tailored to enhance their overall health,
+              happiness, and quality of life.
+            </p>
+            <br></br>
+            <p className="text">
+              Contact us today to learn more about our services or to schedule a
+              consultation. We look forward to meeting you and your beloved
+              pets!
+            </p>
           </div>
-          <p className="text">
-            At <span className="highlight-text">Pawsitive Pet Care</span>, we
-            believe that every pet deserves to be showered with love, care, and
-            attention. Our dedicated team of professionals is committed to
-            providing exceptional pet services that cater to your furry friend's
-            unique needs.
-          </p>
-          <br></br>
-          <p className="text">
-            What sets us apart is our comprehensive range of pet services
-            designed to cater to your pet's unique needs. Whether your furry
-            companion requires regular grooming sessions, daily walks,
-            stimulating playtime, or specialized care, we have you covered. Our
-            services are tailored to enhance their overall health, happiness,
-            and quality of life.
-          </p>
-          <br></br>
-          <p className="text">
-            Contact us today to learn more about our services or to schedule a
-            consultation. We look forward to meeting you and your beloved pets!
-          </p>
+        </div>
+        <div className="carousel-container">
+          <Carousel
+            useKeyboardArrows={true}
+            width="50vw"
+            infiniteLoop={true}
+            showThumbs={false}
+            autoPlay={true}
+            interval={5000}
+            transitionTime={1000}
+            emulateTouch={true}
+          >
+            {images.map((image, idx) => (
+              <div key={idx}>
+                <img src={image} />
+              </div>
+            ))}
+          </Carousel>
         </div>
       </div>
-      <div className="carousel-container">
-        <Carousel useKeyboardArrows={true} width="50vw" infiniteLoop={true} showThumbs={false} autoPlay={true} interval={5000} transitionTime={1000} emulateTouch={true}>
-          {images.map((image, idx) => (
-            <div key={idx}>
-              <img src={image} />
-            </div>
-          ))}
-        </Carousel>
-      </div>
-    </div>
+    </section>
   );
 };
 

@@ -6,31 +6,31 @@ import logoName from "../assets/PawsitivePetCareNameCropped-removebg-preview.png
 const Header = () => {
   const navItems = [
     {
-      path: "/",
+      path: "#",
       name: "Home",
     },
     {
-      path: "/",
+      path: "#about-us",
       name: "About Us",
     },
     {
-      path: "/",
+      path: "#services",
       name: "Services",
     },
     {
-      path: "/",
+      path: "#pricing",
       name: "Pricing",
     },
     {
-      path: "/",
+      path: "#testimonials",
       name: "Testimonials",
     },
     {
-      path: "/",
+      path: "#faq",
       name: "FAQ",
     },
     {
-      path: "/",
+      path: "#footer",
       name: "Contact Us",
     },
   ];
@@ -54,7 +54,7 @@ const Header = () => {
           <ul className="menu">
             {navItems.map((item) => (
               <li className="nav-item">
-                <a href={item.path}>{item.name}</a>
+                <a href={item.path} style={{ padding:"0.5rem 0.25rem" }}>{item.name}</a>
               </li>
             ))}
           </ul>
