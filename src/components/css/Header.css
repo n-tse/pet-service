@@ -18,10 +18,9 @@ ul.menu {
 }
 
 .nav-item {
-  /* padding: 5px; */
   margin: 5px;
   cursor: pointer;
-  color: var(--heading-color)
+  color: var(--heading-color);
 }
 
 .nav-item:hover {

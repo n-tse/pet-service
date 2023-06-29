@@ -2,6 +2,7 @@
   background-color: #eee;
   padding: 4rem 0;
   font-family: "Asap", sans-serif;
+  position: relative;
   /* color: var(--heading-color); */
 }
 
@@ -77,4 +78,11 @@
 .footer-contact-info-icon {
   margin-right: 6px;
   flex-shrink: 0;
+}
+
+.footer .copyright {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }

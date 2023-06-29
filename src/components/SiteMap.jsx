@@ -14,11 +14,15 @@ import { MdEmail } from "react-icons/md";
 
 const SiteMap = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer-wrapper">
         <div className="footer-column footer-logo-column">
           <div className="logo-container">
-            <img src={logo} alt="Pawsitive Pet Care company logo" className="logo" />
+            <img
+              src={logo}
+              alt="Pawsitive Pet Care company logo"
+              className="logo"
+            />
           </div>
           <div className="social-icons-group">
             <TiSocialTwitter className="social-icon" />
@@ -99,11 +103,12 @@ const SiteMap = () => {
             </div>
             <div className="footer-contact-info-row">
               <BsClockFill className="footer-contact-info-icon" />
-              Business Hours: Mon-Sun, 6:00AM to 9:00PM
+              Mon-Sun, 6:00AM to 9:00PM
             </div>
           </ul>
         </div>
       </div>
+      <p className="copyright">&copy; 2023 - Built by Nicholas Tse</p>
     </footer>
   );
 };
