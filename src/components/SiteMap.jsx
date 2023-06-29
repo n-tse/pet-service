@@ -36,16 +36,16 @@ const SiteMap = () => {
           <h4 className="footer-column-title">Company</h4>
           <ul className="footer-column-links">
             <li>
-              <a href="/">About Us</a>
+              <a href="#about-us">About Us</a>
             </li>
             <li>
-              <a href="/">Mission & Values</a>
+              <a>Mission & Values</a>
             </li>
             <li>
-              <a href="/">Our Team</a>
+              <a>Our Team</a>
             </li>
             <li>
-              <a href="/">Careers</a>
+              <a>Careers</a>
             </li>
           </ul>
         </div>
@@ -56,19 +56,19 @@ const SiteMap = () => {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#about-us">About Us</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <a href="#pricing">Pricing</a>
             </li>
             <li>
-              <a href="#">Testimonials</a>
+              <a href="#testimonials">Testimonials</a>
             </li>
             <li>
-              <a href="#">FAQs</a>
+              <a href="#faq">FAQs</a>
             </li>
           </ul>
         </div>
@@ -76,13 +76,13 @@ const SiteMap = () => {
           <h4 className="footer-column-title">Resources</h4>
           <ul className="footer-column-links">
             <li>
-              <a href="#">Terms & Conditions</a>
+              <a>Terms & Conditions</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a>Blog</a>
             </li>
             <li>
-              <a href="#">Pet Care Tips</a>
+              <a>Pet Care Tips</a>
             </li>
           </ul>
         </div>

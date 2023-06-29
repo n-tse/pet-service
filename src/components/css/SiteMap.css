@@ -3,6 +3,7 @@
   padding: 4rem 0;
   font-family: "Asap", sans-serif;
   position: relative;
+  margin-top: 100px;
   /* color: var(--heading-color); */
 }
 
@@ -27,6 +28,10 @@
   box-sizing: border-box;
 }
 
+.footer-column a{
+  padding: 0;
+}
+
 .footer-logo-column {
   min-width: 232px;
   box-sizing: border-box;
@@ -43,7 +48,7 @@
 
 .footer-column-links li{
   margin: 4px 0;
-  padding: 2px;
+  padding: 2px 4px;
   cursor: pointer;
 }
 

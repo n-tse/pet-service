@@ -4,6 +4,13 @@ import MollyPhoto from "../assets/MollyPhoto.jpg";
 import { BsFillHeartFill } from "react-icons/bs";
 
 const Hero = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section>
       <div className="container">
@@ -17,8 +24,8 @@ const Hero = () => {
               designed to keep your pet healthy, happy, and thriving.
             </p>
             <div className="hero-btns">
-              <button className="get-started">Get Started</button>
-              <button className="view-testimonials">View Testimonials</button>
+              <button className="get-started" onClick={() => scrollToSection("pricing")}>Get Started</button>
+              <button className="view-testimonials" onClick={() => scrollToSection("testimonials")}>View Testimonials</button>
             </div>
           </div>
           <div className="hero-img">
