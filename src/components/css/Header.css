@@ -4,13 +4,15 @@
   box-shadow: 0 0px 4px #ddd;
   z-index: 99;
   background-color: white;
-  padding: 0 4vw 0 2vw;
+  padding: 0 4vw 0 0;
+  /* padding: 0 4vw 0 2vw; */
 }
 
 .logo-area {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-left: 2vw;
 }
 
 ul.menu {
@@ -38,6 +40,8 @@ ul.menu {
 
 .navigation {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .action-button-container {
@@ -60,3 +64,33 @@ ul.menu {
   background-color: var(--primary-color-dark);
 }
 
+.hamburger-navigation {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    display: none;
+  }
+
+  .hamburger-navigation {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+  }
+
+  .hamburger-navigation .menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 1rem auto 0;
+    font-family: "Asap", sans-serif;
+  }
+
+  .action-button-container {
+    margin: 1rem auto;
+  }
+}

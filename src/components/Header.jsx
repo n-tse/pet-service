@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/Header.css";
 import { navItems } from "../data";
 import logo from "../assets/PawsitivePetCareLogoOnly-removebg-preview.png";
 import logoName from "../assets/PawsitivePetCareNameCropped-removebg-preview.png";
+import Hamburger from "./Hamburger";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <header className="header">
       <div className="navbar-wrapper">
-        <a href="#" className="logo-area" style={{ padding: 0 }}>
+        <a href="#" className="logo-area" style={{ padding: 0 }} onClick={() => setShowMenu(false)}>
           <img
             src={logo}
             alt="Pawsitive Pet Care Logo"
@@ -36,15 +39,36 @@ const Header = () => {
           <ul className="menu">
             {navItems.map((item) => (
               <li className="nav-item">
-                <a href={item.path} style={{ padding:"0.5rem 0.25rem" }}>{item.name}</a>
+                <a href={item.path} style={{ padding: "0.5rem 0.25rem" }}>
+                  {item.name}
+                </a>
               </li>
             ))}
           </ul>
+          <div className="action-button-container">
+            <button className="action-button">Join Now</button>
+          </div>
         </div>
-        <div className="action-button-container">
-          <button className="action-button">Join Now</button>
+        <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
+          <Hamburger />
         </div>
       </div>
+      {showMenu && (
+        <div className="hamburger-navigation">
+          <ul className="menu">
+            {navItems.map((item) => (
+              <li className="nav-item" onClick={() => setShowMenu(false)}>
+                <a href={item.path} style={{ padding: "0.5rem 0.25rem" }}>
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="action-button-container">
+            <button className="action-button">Join Now</button>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
