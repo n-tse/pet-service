@@ -67,7 +67,16 @@
 .hero-img .heart-icon {
   position: absolute;
   color: red;
-  font-size: 5rem;
+  font-size: 6rem;
   bottom: 8px;
-  right: -4px;
+  right: -8px;
+}
+
+.zoom {
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.zoom:hover{
+  transform: scale(1.2);
+  transition: all ease 1000ms;
 }

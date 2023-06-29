@@ -17,11 +17,6 @@
   margin-bottom: 30px;
 } */
 
-.highlight-text {
-  color: var(--primary-color);
-  font-weight: 700;
-}
-
 .carousel-container {
   display: flex;
   justify-content: center;

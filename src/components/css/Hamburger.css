@@ -15,7 +15,7 @@
   border-radius: 10px;
   background-color: #aaa;
   transform-origin: 1px;
-  transition: all 0.3s linear;
+  transition: all 0.1s linear;
 }
 
 .fries .burger1 {
