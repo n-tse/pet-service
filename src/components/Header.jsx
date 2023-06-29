@@ -23,18 +23,6 @@ const Header = () => {
             style={{ width: 120, height: 50 }}
           />
         </a>
-        {/* <div className="logo-area" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-          <img
-            src={logo}
-            alt="Pawsitive Pet Care Logo"
-            style={{ width: 70, height: 70 }}
-          />
-          <img
-            src={logoName}
-            alt="Pawsitive Pet Care Logo"
-            style={{ width: 120, height: 50 }}
-          />
-        </div> */}
         <div className="navigation">
           <ul className="menu">
             {navItems.map((item) => (
@@ -50,7 +38,7 @@ const Header = () => {
           </div>
         </div>
         <div className="hamburger" onClick={() => setShowMenu(!showMenu)}>
-          <Hamburger />
+          <Hamburger isOpen={showMenu}/>
         </div>
       </div>
       {showMenu && (

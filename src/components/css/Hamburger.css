@@ -18,6 +18,19 @@
   transition: all 0.3s linear;
 }
 
+.fries .burger1 {
+  transform: rotate(45deg);
+}
+
+.fries .burger2 {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.fries .burger3 {
+  transform: rotate(-45deg);
+}
+
 @media (max-width: 900px) {
   .hamburger {
     display: flex;

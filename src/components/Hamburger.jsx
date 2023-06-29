@@ -1,9 +1,9 @@
 import React from 'react';
 import './css/Hamburger.css';
 
-const Hamburger = () => {
+const Hamburger = ({ isOpen }) => {
   return (
-    <div className='hamburger'>
+    <div className={isOpen ? "hamburger fries" : "hamburger"}>
       <div className="burger burger1" />
       <div className="burger burger2" />
       <div className="burger burger3" />
