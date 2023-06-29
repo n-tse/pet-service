@@ -21,7 +21,6 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-duration="1500"
                 data-aos-delay="500"
-                data-aos-offset="50"
               >
                 Caring for Pets,&nbsp;
               </span>

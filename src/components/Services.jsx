@@ -19,43 +19,97 @@ const Services = () => {
               src={SunGraphic}
               className="services-bg-graphic"
               alt="Yellow sun graphic"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              data-aos-delay="1000"
+              data-aos-once="true"
+              data-aos-anchor="#services-trigger-right"
             />
             <div className="services-graphic">
-              <div className="service">
+              <div
+                className="service"
+                data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
                 <h4>Dog Walking</h4>
                 <IoFootstepsSharp className="service-icon" />
               </div>
-              <div className="service">
+              <div
+                className="service"
+                data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
                 <h4>Pet Sitting</h4>
                 <FaDog className="service-icon" />
               </div>
-              <div className="service">
+              <div
+                className="service"
+                data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
                 <h4>Grooming</h4>
                 <GiComb className="service-icon" />
               </div>
-              <div className="service">
+              <div
+                className="service"
+                data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
                 <h4>Training</h4>
                 <MdSports className="service-icon" />
               </div>
-              <div className="service">
+              <div
+                className="service"
+                data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
                 <h4>Boarding & Daycare</h4>
                 <LuHotel className="service-icon" />
               </div>
-              <div className="service">
+              <div
+                className="service"
+                data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
                 <h4>Tranportation</h4>
                 <FaCarSide className="service-icon" />
               </div>
-              <div className="service">
+              <div
+                className="service"
+                data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
                 <h4>Supply Delivery</h4>
                 <BiSolidBone className="service-icon" />
               </div>
-              <div className="service">
+              <div
+                className="service"
+                data-aos="zoom-out"
+                data-aos-duration="1500"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
                 <h4>Health Checkup</h4>
                 <MdHealthAndSafety className="service-icon" />
               </div>
             </div>
           </div>
         </div>
+        <div id="services-trigger-right" />
       </div>
     </section>
   );
