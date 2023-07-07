@@ -80,3 +80,39 @@
   transform: scale(1.2);
   transition: all ease 1000ms;
 }
+
+@media (max-width: 500px) {
+  .hero-wrapper {
+    position: relative;
+  }
+  
+  .hero-content {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-content .text {
+    width: 80vw;
+    margin-bottom: 40px;
+  }
+
+  .hero-img img {
+    height: 168px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 40%;
+    box-shadow: 0 0 4px #aaa;
+    position: absolute;
+    top: 70px;
+    right: -10px;
+  }
+
+  .hero-img .heart-icon {
+    color: red;
+    font-size: 3rem;
+    top: 200px;
+    right: -15px;
+  }
+}
