@@ -80,3 +80,24 @@
   transform: scale(1.2);
   transition: all ease 1000ms;
 }
+
+@media only screen and (max-width: 768px) {
+  .hero-img {
+    display: none;
+  }
+
+  .hero-content {
+    width: 80vw;
+  }
+  
+  .hero-content .headline {
+    margin-top: 0;
+    font-size: 4rem;
+  }
+
+  .hero-content .text {
+    width: 80vw;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
