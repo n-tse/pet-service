@@ -32,7 +32,7 @@ const Testimonials = () => {
         <div className="testimonials-header">
           <h2 className="headline">Testimonials</h2>
         </div>
-        <div className="sliders-container">
+        <div className="swipers-container">
           <Swiper
             effect="cards"
             grabCursor={true}

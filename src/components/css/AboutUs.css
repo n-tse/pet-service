@@ -36,3 +36,19 @@
   opacity: 0.5;
   transform: rotate(20deg);
 }
+
+.carousel-img {
+  width: 50vw;
+}
+
+@media only screen and (max-width: 1030px) {
+  .about-us-content {
+    width: 80vw;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .carousel-img {
+    width: 70vw;
+  }
+}

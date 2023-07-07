@@ -63,3 +63,24 @@
   transform: rotate(20deg);
   opacity: 0.6;
 }
+
+@media only screen and (max-width: 768px) {
+  .services-graphic {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 120px;
+    text-align: center;
+  }
+
+  .services-bg-graphic {
+    display: none;
+  }
+}

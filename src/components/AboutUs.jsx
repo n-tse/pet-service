@@ -56,13 +56,14 @@ const AboutUs = () => {
         <div className="carousel-container">
           <Carousel
             useKeyboardArrows={true}
-            width="50vw"
+            // width="50vw"
             infiniteLoop={true}
             showThumbs={false}
             autoPlay={true}
             interval={5000}
             transitionTime={1000}
             emulateTouch={true}
+            className="carousel-img"
           >
             {images.map((image, idx) => (
               <div key={idx}>

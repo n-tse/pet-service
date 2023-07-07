@@ -1,11 +1,11 @@
-.accoridion-item {
+.accordion-item {
   box-shadow: 0 0 6px #ccc;
   margin: 2rem;
   border-radius: 4px;
   overflow: hidden;
 }
 
-.accoridion-header {
+.accordion-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,10 +14,16 @@
   cursor: pointer;
 }
 
-.accoridion-header:hover{
+.accordion-header:hover{
   background-color: #bbb;
 }
 
-.accoridion-content {
+.accordion-content {
   padding: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .accordion-item {
+    margin: 2rem 0;
+  }
 }
