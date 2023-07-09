@@ -2,14 +2,6 @@
 
 "Pawsitive Pet Care" is a fully-responsive commercial website for a pet care service. It is built using React and deployed through GitHub Pages. The site provides a range of engaging elements such as navigation features, photo carousels, interactive components, and animations, allowing visitors to explore and discover more about the business.
 
-# Demo
-
-https://github.com/n-tse/pet-service/assets/101606128/7decd0ed-8507-4151-818b-01dcebcefa3a
-
-https://github.com/n-tse/pet-service/assets/101606128/dcc442ef-cfc4-4365-be38-5120116e037a
-
-See the live site at <a href="https://n-tse.github.io/pet-service/" target="_blank">https://n-tse.github.io/pet-service/</a>
-
 ## Features
 
 - **Navigation**: The website includes a navigation bar for convenient site navigation, allowing visitors to easily explore different sections of the page.
@@ -18,6 +10,14 @@ See the live site at <a href="https://n-tse.github.io/pet-service/" target="_bla
 - **Pricing Cards**: The site includes pricing cards to display different subscription tier options. Visitors can compare and choose the plan that best suits their needs.
 - **Accordion Component**: An accordion component is used to present frequently asked questions (FAQs) in a collapsible format, improving readability and user experience.
 - **Animations**: Pawsitive Pet Care incorporates animations to enhance visual appeal and engagement. CSS animations and the AOS (Animate On Scroll) library are utilized to bring elements to life as users scroll through the site.
+
+## Demo
+
+https://github.com/n-tse/pet-service/assets/101606128/8f44eeb4-1dd1-43ec-8f6a-9a0d703e9775
+
+https://github.com/n-tse/pet-service/assets/101606128/ee60d4cf-c43d-48e8-8c18-45b81eb1f1a6
+
+See the live site at <a href="https://n-tse.github.io/pet-service/" target="_blank">https://n-tse.github.io/pet-service/</a>
 
 ## Tech Stack
 
